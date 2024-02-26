@@ -10,7 +10,11 @@ int main(){
         return 1;
     }
     int inpUt;
-    int c = getInt(&inpUt);
+    if(0 == getInt(&inpUt)){
+        printf("%s\n", "End of file occured");
+        return 1;
+    }
+
     while(inpUt != 1){
         addLine(matr, res);
         output(matr);

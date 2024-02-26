@@ -6,7 +6,7 @@
 
 typedef struct Line{
 int n;
-double *a;
+int *a;
 } Line;
 
 typedef struct Matrix{
